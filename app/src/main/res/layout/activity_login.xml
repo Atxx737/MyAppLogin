@@ -37,18 +37,26 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <ImageView
+                android:id="@+id/a_login_icon_user"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/icon_user"/>
 
             <EditText
                 android:id="@+id/a_login_et_user"
+                android:text="roy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
+                android:layout_toEndOf="@id/a_login_icon_user"
                 android:background="@null"
                 android:singleLine="true"
-                android:text="Username"
                 android:textColor="#25252D"
                 android:textFontWeight="600"
                 android:textSize="20sp" />
@@ -72,17 +80,27 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <ImageView
+                android:id="@+id/a_login_icon_password"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/icon_pass"/>
 
             <EditText
                 android:id="@+id/a_login_et_password"
-                android:text="Password"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
+                android:text="roy"
+
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
+                android:layout_toEndOf="@id/a_login_icon_password"
                 android:background="@null"
+                android:inputType="textPassword"
                 android:singleLine="true"
                 android:textColor="#25252D"
                 android:textFontWeight="600"

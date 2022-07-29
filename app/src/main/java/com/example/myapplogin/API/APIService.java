@@ -1,13 +1,17 @@
 package com.example.myapplogin.API;
 
 import com.example.myapplogin.Models.ResponeAPI;
+import com.example.myapplogin.Models.ResponeUser;
+import com.example.myapplogin.Models.User;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.http.Body;
 import retrofit2.http.GET;
+import retrofit2.http.POST;
 import retrofit2.http.Query;
 
 public interface APIService {
@@ -25,4 +29,11 @@ public interface APIService {
 
     @GET("/logout")
     Call<ResponeAPI> Logout(@Query("username") String username);
+
+
+    @POST("/login")
+    Call<ResponeUser> Login(@Body User user);
+
+
+
 }
