@@ -49,7 +49,7 @@ public class HomeActivity extends AppCompatActivity {
                         {
                             Intent intent = new Intent(HomeActivity.this, LoginActivity.class);
                             startActivity(intent);
-                            Log.e(TAG, responeAPI.getMessage());
+                            Log.e(TAG, "Logout:" + responeAPI.getMessage());
                         }
                     }
 

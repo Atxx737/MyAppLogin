@@ -11,14 +11,14 @@ import retrofit2.http.GET;
 import retrofit2.http.Query;
 
 public interface APIService {
-    String url = "http:// 192.168.1.2:5000";
+//    URL: http://192.168.1.2:5000
 
     Gson gson = new GsonBuilder()
             .setDateFormat("yyyy/MM/dd HH:mm:ss")
             .create();
 
     APIService apiService = new Retrofit.Builder()
-            .baseUrl(url)
+            .baseUrl("http://192.168.1.2:5000")
             .addConverterFactory(GsonConverterFactory.create(gson))
             .build()
             .create(APIService.class);
